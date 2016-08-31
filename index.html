@@ -296,8 +296,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
-<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+        <p><img src="../images/整理创建私有pod总结/成功安装私有Pod.png =500x" alt=""></p>
+
       
     </div>
     
@@ -422,7 +422,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">source</span> ‘https://github.com/marklin2012/O2Specs.git’        <span class="comment">#私有仓库地址</span></div></pre></td></tr></table></figure>
 <p>这里必须添加两个地址，默认情况下，你如果不添加 source ，系统会默认使用官方仓库地址，但是当你添加了 source 之后，系统就不会自动搜索官方地址，所以这两句都必须添加，否则其他基于官方的依赖库都不能使用了。<br>再次执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pod install</div></pre></td></tr></table></figure></p>
 <p>我们就可以看到很顺利的安装成功了：</p>
-<p><img src="images/成功安装私有Pod.png =500x" alt=""></p>
+<p><img src="../images/整理创建私有pod总结/成功安装私有Pod.png =500x" alt=""></p>
 <h4 id="5、发布稳定的依赖库版本："><a href="#5、发布稳定的依赖库版本：" class="headerlink" title="5、发布稳定的依赖库版本："></a>5、发布稳定的依赖库版本：</h4><p>前面我们提到过，我们的这个实例依赖库 O2View 没有生成稳定的 release 版本。当我们调试完内容之后，一般都是要发布稳定版本的，更新之后再继续发布新版本。我们可以使用命令行或者在 github 页面手动生成，这里为了方便我们使用命令行，首先在终端中 cd 到之前的依赖库 O2View 的目录中，然后输入如下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git tag <span class="string">'0.0.1'</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push --tags</div></pre></td></tr></table></figure>

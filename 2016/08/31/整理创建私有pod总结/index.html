@@ -36,9 +36,9 @@
 <meta property="og:image" content="http://yoursite.com/../images/pod搜索已经添加的私有库.png =500x">
 <meta property="og:image" content="http://yoursite.com/../images/创建包含自己pod的Podfile.png =500x">
 <meta property="og:image" content="http://yoursite.com/images/Podfile Install保存.png =500x">
-<meta property="og:image" content="http://yoursite.com/images/成功安装私有Pod.png =500x">
+<meta property="og:image" content="http://yoursite.com/../images/整理创建私有pod总结/成功安装私有Pod.png =500x">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/126473-2093e064e93a19e4.png =500x">
-<meta property="og:updated_time" content="2016-08-31T08:16:43.000Z">
+<meta property="og:updated_time" content="2016-08-31T08:19:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="整理创建私有pod总结">
 <meta name="twitter:description" content="一、配置相关私有仓库1、显示隐藏文件1$ defaults write com.apple.finder AppleShowAllFiles -bool true
@@ -390,7 +390,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">source</span> ‘https://github.com/marklin2012/O2Specs.git’        <span class="comment">#私有仓库地址</span></div></pre></td></tr></table></figure>
 <p>这里必须添加两个地址，默认情况下，你如果不添加 source ，系统会默认使用官方仓库地址，但是当你添加了 source 之后，系统就不会自动搜索官方地址，所以这两句都必须添加，否则其他基于官方的依赖库都不能使用了。<br>再次执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pod install</div></pre></td></tr></table></figure></p>
 <p>我们就可以看到很顺利的安装成功了：</p>
-<p><img src="images/成功安装私有Pod.png =500x" alt=""></p>
+<p><img src="../images/整理创建私有pod总结/成功安装私有Pod.png =500x" alt=""></p>
 <h4 id="5、发布稳定的依赖库版本："><a href="#5、发布稳定的依赖库版本：" class="headerlink" title="5、发布稳定的依赖库版本："></a>5、发布稳定的依赖库版本：</h4><p>前面我们提到过，我们的这个实例依赖库 O2View 没有生成稳定的 release 版本。当我们调试完内容之后，一般都是要发布稳定版本的，更新之后再继续发布新版本。我们可以使用命令行或者在 github 页面手动生成，这里为了方便我们使用命令行，首先在终端中 cd 到之前的依赖库 O2View 的目录中，然后输入如下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git tag <span class="string">'0.0.1'</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push --tags</div></pre></td></tr></table></figure>
@@ -415,7 +415,7 @@
         <p><span>本文标题:</span><a href="/2016/08/31/整理创建私有pod总结/">整理创建私有pod总结</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Guo Jie</a></p>
         <p><span>发布时间:</span>2016-08-31, 09:35:31</p>
-        <p><span>最后更新:</span>2016-08-31, 16:16:43</p>
+        <p><span>最后更新:</span>2016-08-31, 16:19:28</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/08/31/整理创建私有pod总结/" title="整理创建私有pod总结">http://yoursite.com/2016/08/31/整理创建私有pod总结/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/31/整理创建私有pod总结/　　作者: Guo Jie" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
